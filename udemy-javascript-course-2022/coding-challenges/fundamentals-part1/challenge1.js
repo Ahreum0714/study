@@ -16,3 +16,18 @@
 // m tall.
 // GOOD LUCK 
 
+
+// const markMass = 78,
+//     markHeight = 1.69;
+// const johnMass = 92,
+//     johnHeight = 1.95;
+const markMass = 95;
+const markHeight = 1.88;
+const johnMass = 85;
+const johnHeight = 1.76;
+
+const BMImark = markMass / markHeight ** 2;
+const BMIjohn = johnMass / johnHeight ** 2;
+let markHigherBMI = BMImark > BMIjohn;
+
+console.log(BMImark, BMIjohn, markHigherBMI);
