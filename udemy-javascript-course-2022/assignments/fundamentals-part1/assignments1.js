@@ -6,7 +6,7 @@
 
 let country = 'korea';
 let continent = 'asia';
-let population = '51780000';
+let population = 51;
 
 console.log(country);
 console.log(continent);
