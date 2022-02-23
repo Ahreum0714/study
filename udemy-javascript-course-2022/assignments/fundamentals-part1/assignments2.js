@@ -10,7 +10,7 @@ let country = 'korea';
 let continent = 'asia';
 let population = 51;
 
-let isIsland = country === 'korea';
+let isIsland = false;
 let language;
 console.log(typeof isIsland);
 console.log(typeof population);
