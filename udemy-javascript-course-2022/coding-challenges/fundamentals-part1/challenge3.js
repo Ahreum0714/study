@@ -51,8 +51,8 @@ if (dolphinsAverage > koalasAverage) {
 }
 
 const minimumScore = 100;
-const isDolphinsOverMin = dolphinsAverage > minimumScore;
-const isKoalasOverMIn = koalasAverage > minimumScore;
+const isDolphinsOverMin = dolphinsAverage >= minimumScore;
+const isKoalasOverMIn = koalasAverage >= minimumScore;
 if (dolphinsAverage > koalasAverage && isDolphinsOverMin) {
     console.log("winner is Dolphins team!");
 } else if (DataTransfer < koalasAverage && isKoalasOverMIn) {
