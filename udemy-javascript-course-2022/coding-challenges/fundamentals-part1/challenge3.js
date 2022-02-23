@@ -44,8 +44,10 @@ const koalasAverage = (Koalas1 + Koalas2 + Koalas3) / 3;
 
 if (dolphinsAverage > koalasAverage) {
     console.log("winner is Dolphins team!");
-} else {
+} else if (dolphinsAverage < koalasAverage) {
     console.log("winner is Koalas team!");
+} else {
+    console.log("Both win the trophy!");
 }
 
 const minimumScore = 100;
