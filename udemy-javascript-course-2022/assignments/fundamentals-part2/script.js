@@ -44,4 +44,9 @@ console.log(popul1);
 console.log(popul2);
 console.log(popul3);
 
+
 /**LECTURE: Arrow Functions */
+const percentageOfWorld3 = population => (population / worldPopulation) * 100;
+
+
+/** */
