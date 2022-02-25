@@ -136,17 +136,27 @@ for (let i = 1; i <= 50; i++) {
 
 
 /**LECTURE: Looping Arrays, Breaking and Continuing */
-
+let percentages2 = [];
+for (let i = 0; i < populations.length; i++) {
+    percentages2.push([percentageOfWorld1(populations[i])]);
+    console.log(percentages2);
+}
 
 
 /**LECTURE: Looping Backwards and Loops in Loops */
-
-
+let listOfNeighbours = [
+    ['Canada', 'Mexico'],
+    ['Spain'],
+    ['Norway', 'Sweden', 'Russia']
+];
+for (let i = 0; i < listOfNeighbours.length; i++) {
+    if (typeof listOfNeighbours[i] === "object") {
+        for (let j = 0; j < listOfNeighbours[i].length; j++) {
+            console.log(`Neighbour: ${listOfNeighbours[i][j]}`);
+        }
+    }
+}
 
 
 /**LECTURE: The while Loop */
 
-
-
-
-/** */
