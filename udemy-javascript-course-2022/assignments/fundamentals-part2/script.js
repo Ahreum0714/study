@@ -161,4 +161,11 @@ for (let i = 0; i < listOfNeighbours.length; i++) {
 
 
 /**LECTURE: The while Loop */
-
+const percentages3 = [];
+let i = 0;
+while (i < populations.length) {
+    const perc = percentageOfWorld1(populations[i]);
+    percentages3.push(perc);
+    i++;
+}
+console.log(percentages3);
