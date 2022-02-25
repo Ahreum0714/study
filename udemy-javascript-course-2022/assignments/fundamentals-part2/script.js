@@ -129,6 +129,23 @@ console.log(myCountry);
 
 /**LECTURE: Iteration: The for Loop */
 
+for (let i = 1; i <= 50; i++) {
+    console.log(`Voter number ${i} is currently voting`);
+}
+
+
+
+/**LECTURE: Looping Arrays, Breaking and Continuing */
+
+
+
+/**LECTURE: Looping Backwards and Loops in Loops */
+
+
+
+
+/**LECTURE: The while Loop */
+
 
 
 
