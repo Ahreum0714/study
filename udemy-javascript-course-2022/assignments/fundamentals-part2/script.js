@@ -90,8 +90,30 @@ console.log(neighbours);
 
 
 /**LECTURE: Introduction to Objects */
-
+const myCountry = {
+    country: 'korea',
+    capital: 'seoul',
+    language: 'korean',
+    population: 51,
+    neighbours: ['china', 'japan', 'usa']
+}
 
 
 
 /**LECTURE: Dot vs. Bracket Notation */
+console.log(`${myCountry.country} has ${myCountry.population} million ${myCountry.language}-speaking people,${myCountry.neighbours.length} neighbouring countries and a capital called Helsinki.`);
+
+myCountry.population += 2;
+console.log(`${myCountry.country} has ${myCountry.population} million ${myCountry.language}-speaking people,${myCountry.neighbours.length} neighbouring countries and a capital called Helsinki.`);
+
+myCountry['population'] -= 2;
+console.log(`${myCountry.country} has ${myCountry.population} million ${myCountry.language}-speaking people,${myCountry.neighbours.length} neighbouring countries and a capital called Helsinki.`);
+
+
+
+/**LECTURE: Object Methods */
+
+
+
+
+/**LECTURE: Iteration: The for Loop */
