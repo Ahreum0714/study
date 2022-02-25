@@ -95,7 +95,16 @@ const myCountry = {
     capital: 'seoul',
     language: 'korean',
     population: 51,
-    neighbours: ['china', 'japan', 'usa']
+    neighbours: ['china', 'japan', 'usa'],
+
+    /**LECTURE: Object Methods */
+    describe: function () {
+        console.log(`${this.country} has ${this.population} million ${this.language}-speaking people,${this.neighbours.length} neighbouring countries and a capital called Helsinki.`);
+    },
+
+    checkIsland: function () {
+        this.isIsland = (this.neighbours.length === 0) ? true : false;
+    }
 }
 
 
@@ -112,8 +121,15 @@ console.log(`${myCountry.country} has ${myCountry.population} million ${myCountr
 
 
 /**LECTURE: Object Methods */
-
+myCountry.describe();
+myCountry.checkIsland();
+console.log(myCountry);
 
 
 
 /**LECTURE: Iteration: The for Loop */
+
+
+
+
+/** */
