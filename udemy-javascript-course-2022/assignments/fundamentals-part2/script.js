@@ -60,15 +60,32 @@ describePopulation('Portugal', 10);
 
 /**LECTURE: Introduction to Arrays */
 const populations = [1441, 51, 880, 260];
-populations.length === 4 ? console.log(true) : console.log(false);
+console.log(populations.length === 4);
 
-const percentages = [percentageOfWorld1(populations[0]), percentageOfWorld1(populations[1])
-    , percentageOfWorld1(populations[2]), percentageOfWorld1(populations[3])];
+const percentages = [
+    percentageOfWorld1(populations[0]),
+    percentageOfWorld1(populations[1]),
+    percentageOfWorld1(populations[2]),
+    percentageOfWorld1(populations[3])
+];
 console.log(percentages);
 
 
 /**LECTURE: Basic Array Operations (Methods)*/
+const neighbours = ['china', 'japan', 'russia'];
 
+neighbours.push('Utopia');
+console.log(neighbours);
+
+neighbours.pop();
+console.log(neighbours);
+
+if (!neighbours.includes('germany')) {
+    console.log('Probably not a central European country :D');
+}
+
+neighbours[neighbours.indexOf('japan')] = 'Republic of Sweden';
+console.log(neighbours);
 
 
 
