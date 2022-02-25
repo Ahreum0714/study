@@ -138,8 +138,10 @@ for (let i = 1; i <= 50; i++) {
 /**LECTURE: Looping Arrays, Breaking and Continuing */
 let percentages2 = [];
 for (let i = 0; i < populations.length; i++) {
-    percentages2.push([percentageOfWorld1(populations[i])]);
-    console.log(percentages2);
+    // percentages2.push([percentageOfWorld1(populations[i])]);
+    // console.log(percentages2);
+    const perc = percentageOfWorld1(populations[i]);
+    percentages2.push(perc);
 }
 
 
