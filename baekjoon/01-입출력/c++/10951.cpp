@@ -11,7 +11,7 @@ int main()
     return 0;
 }
 
-// 좀 더 메모리 크기 효율적으로 컨트롤할거라면
+// 좀 더 시간을  효율적으로 컨트롤할거라면
 //while(scanf("%d %d", &a, &b) != EOF){
 //	printf("%d\n", a + b);
 //}
