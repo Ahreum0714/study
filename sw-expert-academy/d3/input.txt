@@ -1,4 +1,4 @@
 3
-oxoxoxoxoxoxoxo
-x
-xxxxxxxxxxxx
+SUN
+SAT
+MON
