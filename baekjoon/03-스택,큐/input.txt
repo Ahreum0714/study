@@ -1,16 +1,13 @@
-15
-push_back 1
-push_front 2
-front
-back
-size
-empty
-pop_front
-pop_back
-pop_front
-size
-empty
-pop_back
-push_front 3
-empty
-front
+4
+RDD
+4
+[1,2,3,4]
+DD
+1
+[42]
+RRD
+6
+[1,1,2,3,5,8]
+D
+0
+[]
