@@ -1,0 +1,14 @@
+-- [Prog] SQL - lv1: 상위 n개 레코드
+
+-- 1. subselect
+SELECT NAME
+FROM ANIMAL_INS
+WHERE DATETIME=(
+    SELECT MIN(DATETIME)
+    FROM ANIMAL_INS
+    ) 
+    
+-- 2. limit
+SELECT NAME
+FROM ANIMAL_INS
+ORDER BY DATETIME LIMIT 1
