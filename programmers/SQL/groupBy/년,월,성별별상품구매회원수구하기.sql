@@ -1,0 +1,13 @@
+-- [Prog] SQL - lv4: 년, 월, 성별 별 상품 구매 회원 수 구하기
+SELECT YEAR(S.SALES_DATE) YEAR, MONTH(S.SALES_DATE) MONTH, U.GENDER GENDER, COUNT(DISTINCT S.USER_ID) USERS
+FROM USER_INFO AS U
+    INNER JOIN ONLINE_SALE AS S
+    ON S.USER_ID = U.USER_ID
+WHERE U.GENDER IS NOT NULL
+GROUP BY YEAR(S.SALES_DATE), MONTH(S.SALES_DATE), U.GENDER
+ORDER BY YEAR, MONTH, GENDER
+
+-- 일단 USER_INFO와 ONLINE_SALE를 INNER JOIN 시켜준 뒤
+-- 조인된 테이블에서 성별 정보가 없는 경우를 제외시키고
+-- 연 -> 월 -> 성별 순으로 그룹화시켜주고
+-- 상품을 구매한 회원수를 구해야 하므로 DISTINCT로 중복을 제거한다
